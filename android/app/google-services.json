@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "402595320061",
+    "firebase_url": "https://college-activity-tracker.firebaseio.com",
+    "project_id": "college-activity-tracker",
+    "storage_bucket": "college-activity-tracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402595320061:android:85d48f9c1771bcca052e94",
+        "android_client_info": {
+          "package_name": "com.arjunsinha.college_activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402595320061-skvc06phc0vfksf5b6e3sqfitt6mbsr1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arjunsinha.college_activities",
+            "certificate_hash": "b5b0d077c29e361dae9eb2ee252dc92958ae46c4"
+          }
+        },
+        {
+          "client_id": "402595320061-a5ud0bam6j4uo1k20fv7qcq73oem2e94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu0M0F5HThEoByqM1rjXe49DyqQp2Uucw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402595320061-a5ud0bam6j4uo1k20fv7qcq73oem2e94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
