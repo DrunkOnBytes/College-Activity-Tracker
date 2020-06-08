@@ -14,9 +14,13 @@ class ActivityCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              FittedBox(
-                child: Image.asset(img),
-                fit: BoxFit.fill,
+              Container(
+                height: 500,
+                width: 350,
+                child: FittedBox(
+                  child: Image.asset(img),
+                  fit: BoxFit.fill,
+                ),
               ),
               SizedBox(height: 8,),
               Container(
