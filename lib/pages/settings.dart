@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import '../util/auth.dart';
 class SettingsPage extends StatefulWidget {
   static const routeName = '/settings';
   @override
@@ -38,6 +38,20 @@ class _SettingsPageState extends State<SettingsPage> {
                   });
                   onThemeChanged(val, themeNotifier);
                 },
+              ),
+            ),
+          ),
+          FlatButton(
+            onPressed: (){
+              setState(() {
+                signOut();
+                Navigator.of(context).pushReplacementNamed('/');
+              });
+            },
+            child: Text(
+              'LOGOUT',
+              style: TextStyle(
+                fontSize: 25,
               ),
             ),
           )

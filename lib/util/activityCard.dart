@@ -30,7 +30,8 @@ class ActivityCard extends StatelessWidget {
                 ),
                 decoration: BoxDecoration(
                   border: Border.all(
-                      width: 3.0
+                      color: Colors.red.shade700,
+                      width: 2.5
                   ),
                   borderRadius: BorderRadius.all(
                       Radius.circular(50.0) //                 <--- border radius here

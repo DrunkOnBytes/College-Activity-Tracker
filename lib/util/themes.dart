@@ -5,6 +5,7 @@ final darkTheme = ThemeData(
   primaryColor: Colors.black,
   brightness: Brightness.dark,
   backgroundColor: const Color(0xFF212121),
+  floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Colors.yellow.shade600),
   accentColor: Colors.white,
   accentIconTheme: IconThemeData(color: Colors.black),
   dividerColor: Colors.white54,
@@ -13,6 +14,7 @@ final darkTheme = ThemeData(
 final lightTheme = ThemeData(
   primarySwatch: Colors.grey,
   primaryColor: Colors.white,
+  floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: Color.fromRGBO(77, 77, 255, 0.7)),
   appBarTheme: AppBarTheme(color:  Color.fromRGBO(77, 77, 255, 0.7)),
   brightness: Brightness.light,
   backgroundColor: const Color(0xFFE5E5E5),

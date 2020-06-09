@@ -13,6 +13,9 @@ import 'pages/settings.dart';
 import 'pages/home.dart';
 import 'pages/faculty.dart';
 import 'pages/about.dart';
+import 'pages/logIn.dart';
+import 'pages/messages.dart';
+import 'pages/news.dart';
 
 void main() {
 
@@ -38,9 +41,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Activity Tracker',
       theme: themeNotifier.getTheme(),
-      home: Home(),
+      home: LoginPage(),
       initialRoute: '/',
       routes: {
+        Home.routeName: (ctx) => Home(),
         IEEEevents.routeName: (ctx) => IEEEevents(),
         CSIevents.routeName: (ctx)=> CSIevents(),
         RoboClub.routeName: (ctx) => RoboClub(),
@@ -50,6 +54,8 @@ class MyApp extends StatelessWidget {
         SettingsPage.routeName : (ctx) => SettingsPage(),
         Faculty.routeName: (ctx) => Faculty(),
         AboutScreen.routeName: (ctx) => AboutScreen(),
+        Messages.routeName: (ctx) => Messages(),
+        News.routeName: (ctx) => News(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(builder: (ctx) => Home());

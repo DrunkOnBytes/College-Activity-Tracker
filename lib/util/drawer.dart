@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../pages/faculty.dart';
 import '../pages/settings.dart';
 import '../pages/about.dart';
+import '../pages/home.dart';
+import '../pages/messages.dart';
+import '../pages/news.dart';
 
 class MainDrawer extends StatelessWidget {
   Widget buildListTile(String title, IconData icon, Function handlingTap) {
@@ -55,12 +58,21 @@ class MainDrawer extends StatelessWidget {
             height: ScreenUtil.instance.setHeight(20),
           ),
           buildListTile("Home", Icons.home, (){
-            Navigator.of(context).pushReplacementNamed('/');
+            Navigator.of(context).pushReplacementNamed(Home.routeName);
           }),
 
           buildListTile("Faculty", Icons.account_circle,(){
             Navigator.of(context).pushNamed(Faculty.routeName);
           }),
+
+          buildListTile("Discussion Forum", Icons.forum, (){
+            Navigator.of(context).pushNamed(Messages.routeName);
+          }),
+
+          buildListTile("News & Highlights", Icons.notifications_active,(){
+            Navigator.of(context).pushNamed(News.routeName);
+          }),
+
           buildListTile("About", Icons.info,(){
             Navigator.of(context).pushNamed(AboutScreen.routeName);
           }),

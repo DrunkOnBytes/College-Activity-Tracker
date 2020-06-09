@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../util/activityCard.dart';
-import '../util/imageStorageUtil.dart';
 
-class IEEEevents extends StatelessWidget {
+class News extends StatelessWidget {
 
-  static const routeName = '/ieeeEvents';
+  static const routeName = '/news';
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class IEEEevents extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "IEEE Events",
+          "News & Highlights",
           style: TextStyle(
             fontWeight: FontWeight.w700,
             color: Colors.white,
@@ -39,7 +38,6 @@ class IEEEevents extends StatelessWidget {
           ActivityCard('Test4','testimg/4.jpg'),
         ],
       ),
-      floatingActionButton: AddButton('ieee'),
     );
   }
 }

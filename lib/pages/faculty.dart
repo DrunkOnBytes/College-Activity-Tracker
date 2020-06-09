@@ -17,7 +17,7 @@ class Faculty extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Faculty in Discussion",
+          "Faculty Present",
           style: TextStyle(
               fontWeight: FontWeight.w700,
               fontSize: ScreenUtil.instance.setSp(22.0),
