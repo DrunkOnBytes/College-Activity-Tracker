@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../util/activityCard.dart';
-import '../util/imageStorageUtil.dart';
 
 class IEEEevents extends StatelessWidget {
 
@@ -39,7 +38,6 @@ class IEEEevents extends StatelessWidget {
           ActivityCard('Test4','testimg/4.jpg'),
         ],
       ),
-      floatingActionButton: AddButton('ieee'),
     );
   }
 }

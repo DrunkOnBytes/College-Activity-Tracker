@@ -48,7 +48,7 @@ class AboutScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Text("Email bug reports at: "),
-                          Text("arjunsinha2122000@gmail.com")
+                          Text("arjunsinha2122000@gmail.com",style: TextStyle(fontSize: 12),)
                         ],
                       ),
                     )
@@ -121,7 +121,7 @@ final List<Entry> data = <Entry>[
     'Terms and Conditions',
     <Entry>[
       Entry(
-          'These terms and conditions ("Terms", "Agreement") are an agreement between Mobile Application Developer ("Mobile Application Developer", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the DYPIU Assist mobile application and any of its products or services (collectively, "Mobile Application" or "Services").'),
+          'These terms and conditions ("Terms", "Agreement") are an agreement between Mobile Application Developer ("Mobile Application Developer", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the College Activity Tracker mobile application and any of its products or services (collectively, "Mobile Application" or "Services").'),
     ],
   ),
 ];
