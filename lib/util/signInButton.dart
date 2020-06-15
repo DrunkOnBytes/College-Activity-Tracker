@@ -21,6 +21,16 @@ class _SignInButtonState extends State<SignInButton> {
       )
   );
 
+  @override
+  void initState() {
+    super.initState();
+    currentUser().then((user){
+      if(user!=null)
+        Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (BuildContext context) => Home()));
+    });
+  }
+
   void signIn()async {
     try {
       final result = await InternetAddress.lookup('google.com');
@@ -29,7 +39,8 @@ class _SignInButtonState extends State<SignInButton> {
         signInWithGoogle().whenComplete(() {
           if (userEmail!=null){
             Scaffold.of(context).hideCurrentSnackBar();
-            Navigator.of(context).pushNamed(Home.routeName);
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (BuildContext context) => Home()));
           }
           else
             Scaffold.of(context).hideCurrentSnackBar();
@@ -45,14 +56,17 @@ class _SignInButtonState extends State<SignInButton> {
 
   @override
   Widget build(BuildContext context) {
-    return OutlineButton(
+    return RaisedButton(
       splashColor: Colors.grey,
-      onPressed: () {
+      color: Colors.white,
+      onPressed: (){
         signIn();
       },
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(40),
+          side: BorderSide(color: Colors.black38, width: 0.5)
+      ),
       highlightElevation: 0,
-      borderSide: BorderSide(color: Colors.grey),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
         child: Row(

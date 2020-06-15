@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../util/activityCard.dart';
+import '../util/imageStorageUtil.dart';
 
 class RoboClub extends StatelessWidget {
 
@@ -30,14 +31,8 @@ class RoboClub extends StatelessWidget {
         centerTitle: true,
 //          backgroundColor: Color.fromRGBO(77, 77, 255, 0.7),
       ),
-      body: ListView(
-        children: [
-          ActivityCard('Test1','testimg/1.jpg'),
-          ActivityCard('Test2','testimg/2.jpg'),
-          ActivityCard('Test3','testimg/3.jpg'),
-          ActivityCard('Test4','testimg/4.jpg'),
-        ],
-      ),
+      body: ActivityCards('robo'),
+      floatingActionButton: AddButton('robo'),
     );
   }
 }

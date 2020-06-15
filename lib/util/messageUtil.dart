@@ -13,8 +13,8 @@ class Message{
 }
 
 void addMessageToDatabase(Message m){
-  Firestore.instance.collection('messages').document()
-      .setData({ 'from': m.from, 'message': m.message, 'time': m.time });
+  Firestore.instance.collection('messages').document(m.time.toString())
+      .setData({ 'from': m.from, 'message': m.message, 'time': m.time});
 }
 
 class MessageTiles extends StatelessWidget {
@@ -23,6 +23,26 @@ class MessageTiles extends StatelessWidget {
   final String message;
   final Timestamp time;
   MessageTiles(this.message,this.time,this.from);
+
+  String messageTime(){
+    String tt='',t;
+    if(time.toDate().hour>12){
+      tt = tt + (time.toDate().hour-12).toString();
+      t=' pm';
+    }
+    else{
+      tt = tt + time.toDate().hour.toString();
+      t=' am';
+    }
+    if(time.toDate().minute<10)
+      tt = tt +' : 0'+time.toDate().minute.toString();
+    else
+      tt = tt +' : '+time.toDate().minute.toString();
+
+    tt = tt + t;
+    return tt;
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +68,7 @@ class MessageTiles extends StatelessWidget {
                     style: TextStyle(color: Colors.black, fontSize: 22),
                   ),
                   Text(
-                    time.toDate().hour>12?
-                    (time.toDate().hour-12).toString() + " : " + time.toDate().minute.toString()+' pm'
-                        :time.toDate().hour.toString() + " : " + time.toDate().minute.toString()+' am',
+                    messageTime(),
                     style: TextStyle(color: Colors.black45, fontSize: 15),
                   )
                 ],
