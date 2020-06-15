@@ -83,7 +83,7 @@ class MainDrawer extends StatelessWidget {
             height: ScreenUtil.instance.setHeight(30),
           ),
           Container(
-            child: Text("Built by CrypticCoders with ❤️ and ☕"),
+            child: Text("Built by Arjun Sinha with ❤️ and ☕"),
           )
         ],
       ),

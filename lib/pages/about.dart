@@ -107,21 +107,21 @@ final List<Entry> data = <Entry>[
     'About Us',
     <Entry>[
       Entry(
-          'The app was built by Arjun and his team CrypticCoders as part of a Hackathon'),
+          'The app was built by Arjun as part of a Hackathon'),
     ],
   ),
   Entry(
     'Privacy Policy',
     <Entry>[
       Entry(
-          'CrypticCoders built the College Activity app as an Open Source app. This SERVICE is provided by CrypticCoders at no cost and is intended for use as is. This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.'),
+          'Arjun built the College Activity app as an Open Source app. This SERVICE is provided by Arjun at no cost and is intended for use as is. This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.'),
     ],
   ),
   Entry(
     'Terms and Conditions',
     <Entry>[
       Entry(
-          'These terms and conditions ("Terms", "Agreement") are an agreement between Mobile Application Developer ("Mobile Application Developer", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the DYPIU Assist mobile application and any of its products or services (collectively, "Mobile Application" or "Services").'),
+          'These terms and conditions ("Terms", "Agreement") are an agreement between Mobile Application Developer ("Mobile Application Developer", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of the College Activity Tracker mobile application and any of its products or services (collectively, "Mobile Application" or "Services").'),
     ],
   ),
 ];
