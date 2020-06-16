@@ -100,7 +100,7 @@ class _AddButtonState extends State<AddButton> {
 
       final String downloadUrl = await snapshot.ref.getDownloadURL();
 
-      Firestore.instance.collection(folder).document()
+      Firestore.instance.collection(folder).document(DateTime.now().toString())
           .setData({ 'txt': description, 'img': downloadUrl, 'from': userEmail});
 
       print('File Uploaded');
